@@ -89,7 +89,7 @@ void main() {
                   ),
                 ],
               ),
-              const ExpansionTileCard(
+               ExpansionTileCard(
                 key: defaultKey,
                 title: Text('Default'),
                 children: <Widget>[
@@ -216,7 +216,7 @@ void main() {
 
   testWidgets('ExpansionTileCard subtitle', (WidgetTester tester) async {
     await tester.pumpWidget(
-      const MaterialApp(
+       MaterialApp(
         home: Scaffold(
           body: ExpansionTileCard(
             title: Text('Title'),

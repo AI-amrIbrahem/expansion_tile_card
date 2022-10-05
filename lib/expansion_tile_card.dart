@@ -30,7 +30,7 @@ class ExpansionTileCard extends StatefulWidget {
   /// Creates a single-line [ListTile] with a trailing button that expands or collapses
   /// the tile to reveal or hide the [children]. The [initiallyExpanded] property must
   /// be non-null.
-  const ExpansionTileCard({
+   ExpansionTileCard({
     Key? key,
     this.leading,
     required this.title,
@@ -41,7 +41,7 @@ class ExpansionTileCard extends StatefulWidget {
     this.borderRadius = const BorderRadius.all(Radius.circular(8.0)),
     this.elevation = 2.0,
     this.initialElevation = 0.0,
-    this.initiallyExpanded = false,
+    this.initiallyExpanded =false,
     this.initialPadding = EdgeInsets.zero,
     this.finalPadding = const EdgeInsets.only(bottom: 6.0),
     this.contentPadding,
@@ -118,7 +118,7 @@ class ExpansionTileCard extends StatefulWidget {
   final Color shadowColor;
 
   /// Specifies if the list tile is initially expanded (true) or collapsed (false, the default).
-  final bool initiallyExpanded;
+   bool initiallyExpanded;
 
   /// The padding around the outside of the ExpansionTileCard while collapsed.
   ///
